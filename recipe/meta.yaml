@@ -42,6 +42,7 @@ requirements:
     - r-spam
     - r-spatstat <2
     - r-splancs
+    - r-transformer
     - r-tree
   run:
     - r-base <4.1
@@ -61,6 +62,7 @@ requirements:
     - r-spam
     - r-spatstat <2
     - r-splancs
+    - r-transformer
     - r-tree
 
 test:
