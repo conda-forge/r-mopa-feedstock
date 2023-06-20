@@ -1,11 +1,11 @@
-About r-mopa
-============
+About r-mopa-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mopa-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/SantanderMetGroup/mopa/wiki
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mopa-feedstock/blob/main/LICENSE.txt)
 
 Summary: Transferable Species Distribution Modeling and Pseudo-absence data generation.
 
