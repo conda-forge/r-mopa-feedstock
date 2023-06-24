@@ -1,4 +1,4 @@
-{% set version = "1.0.2" %}
+{% set version = "1.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://github.com/SantanderMetGroup/mopa/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 48fb3957c2508ce1f418e250ef8260ef3382591e46e31b30ba6429cbd4efd593
+  sha256: 93f075c8e9e66550c40f102418a4361790bc7e81dcea6d223c2eab8a4c110a3f
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -76,7 +76,7 @@ about:
   summary: Transferable Species Distribution Modeling and Pseudo-absence data generation.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
