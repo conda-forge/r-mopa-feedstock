@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/SantanderMetGroup/mopa/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: b7bcf8a85ada766c13e75938f1a6f630723b017b25f738dcddda12a8bffbec06
+  sha256: 1e18ac279bd5ab0e8b430406ce665a0e7c1f4e378119763b5aa501f99a891a91
 
 build:
   merge_build_host: true  # [win]
