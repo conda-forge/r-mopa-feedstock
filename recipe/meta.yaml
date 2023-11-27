@@ -1,4 +1,4 @@
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/SantanderMetGroup/mopa/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 93f075c8e9e66550c40f102418a4361790bc7e81dcea6d223c2eab8a4c110a3f
+  sha256: 1e18ac279bd5ab0e8b430406ce665a0e7c1f4e378119763b5aa501f99a891a91
 
 build:
   merge_build_host: true  # [win]
@@ -25,7 +25,7 @@ requirements:
     - {{ posix }}zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
-    - r-base <4.1
+    - r-base
     - r-presenceabsence
     - r-abind
     - r-dismo
@@ -40,12 +40,12 @@ requirements:
     - r-sampling
     - r-sp
     - r-spam
-    - r-spatstat <2
+    - r-spatstat.geom >=1.65
     - r-splancs
-    - r-transformer
     - r-tree
+    - r-transformer
   run:
-    - r-base <4.1
+    - r-base
     - r-presenceabsence
     - r-abind
     - r-dismo
@@ -60,10 +60,10 @@ requirements:
     - r-sampling
     - r-sp
     - r-spam
-    - r-spatstat <2
+    - r-spatstat.geom >=1.65
     - r-splancs
-    - r-transformer
     - r-tree
+    - r-transformer
 
 test:
   commands:
